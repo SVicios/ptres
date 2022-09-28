@@ -1,10 +1,21 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <Navbar />
+  <router-view />
+  <Pie />
 </template>
+
+<script>
+import Navbar from "./components/Navbar.vue"
+import Pie from "./components/Pie.vue"
+
+export default {
+  components: {
+    Navbar,
+    Pie
+  }
+}
+</script>
+
 
 <style>
 #app {
